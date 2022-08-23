@@ -1,0 +1,20 @@
+/* ######### MIDDLE PHOTOS ############*/
+.middle-photos img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+/* .mid-cont {
+  width: 80%;
+  margin: 0 auto 0 auto;
+} */
+.middle-photos {
+  margin: 300px auto 0 auto;
+  border: 1px solid red;
+  text-align: center;
+}
+.mid-image {
+  display: inline;
+}

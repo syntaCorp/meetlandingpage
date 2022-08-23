@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #fafafa;
+}
+
+/* header layout */
+/* .header-logo {
+  width: 119px;
+  margin: 3.5em auto 3.5em auto;
+} */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  width: 119px;
+  margin: 3.5em auto 3.5em auto;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 380px;
+  align-items: center;
+}
+
+.hero-mobile {
+  display: none;
+}
+.left-image {
+  margin-left: -0.5em;
+  transform: scale(1.2);
+  max-width: 100%;
+  height: auto;
+}
+
+.right-image {
+  margin-right: -0.5em;
+  transform: scale(1.2);
+  max-width: 100%;
+  height: auto;
+}
+
+/* ********** DOWNLOAD TEXT & BUTTON ********* */
+.download-text {
+  text-align: center;
+  width: 400px;
+  padding: 1em;
+}
+.download-text h1 {
+  font-size: 4em;
+  color: #28283d;
+  font-weight: 900;
+  line-height: 0.8;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: #fafafa;
+  font-weight: 600;
+  font-size: 1.5em;
+  border-radius: 2em;
+  background-color: #87879d;
+  padding: 0.6em 0.9em;
+  margin-top: 1em;
+}
+p {
+  font-size: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: #87879d;
+}
+.download {
+  background-color: #4d96a9;
+  margin-right: 0.5em;
+}
+.download:hover {
+  background-color: #8fe3f9;
+}
+span {
+  color: #8fe3f9;
+}
+.what-is {
+  background-color: #855fb1;
+  margin-left: 0.5em;
+}
+.what-is:hover {
+  background-color: #d9b8ff;
+}
+/* ################ end header layout ########## */
+
+/* MIDDLE PHOTOS USING GRID */
+.mid-cont {
+  display: grid;
+  /* grid-template-columns: 300px 300px 300px 300px; */
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 100%;
+  align-items: center;
+  margin: 15em 10em auto;
+  grid-column-gap: 1.5em;
+}
+.mid-image > img {
+  border-radius: 16px;
+  max-width: 100%;
+}
+
+/* END MIDDLE PHOTOS USING GRID */
+
+/* ########### middle text #############*/
+.midarticle-wrapper {
+  text-align: center;
+  width: 30em;
+  margin: 6em auto;
+}
+
+.midarticle-title {
+  text-transform: uppercase;
+  color: #4d96a9;
+  margin: 0;
+}
+
+.midarticle {
+  color: #28283d;
+  font-size: 2.5em;
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* ########### end middle text ############ */
+
+/* 
+remember that when writing media query for smaller screen you can reduce the size of middle images */
+/*##########END MIDDLE PHOTOS ############  */
+
+/* #########  START FOOTER ############*/
+.hero-footer {
+  display: none;
+}
+
+.footer-txt {
+  color: #fafafa;
+}
+footer {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-evenly;
+  background: linear-gradient(
+      rgba(77, 151, 169, 0.86),
+      rgba(77, 151, 169, 0.86)
+    ),
+    url(./assets/desktop/image-footer.jpg); /* The least supported option. */
+  background-size: cover;
+  height: 308px;
+  width: 100vw;
+}
+
+.footer-txt-head {
+  color: #fafafa;
+  font-size: 4em;
+  width: 550px;
+  flex-basis: 10em;
+}
+
+footer > p {
+  width: 300px;
+  flex-basis: 19em;
+}
+
+footer > a {
+  flex-basis: 6rem;
+  text-align: center;
+}
+
+/* #########  END FOOTER ############*/
+
+/* MOBILE DESIGN */
+@media only screen and (max-width: 480px) {
+  /* HEADING */
+  .left-image > img {
+    display: none;
+  }
+
+  .right-image > img {
+    display: none;
+  }
+  /* header logo */
+  .header-logo {
+    display: block;
+  }
+  /* end header logo */
+
+  .hero-mobile {
+    display: inline-block;
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .header-content {
+    text-align: center;
+    display: inline-block;
+    overflow: visible;
+  }
+  .download-text {
+    text-align: center;
+    max-width: 400px;
+  }
+
+  .download,
+  .what-is {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  /* MIDDLE PHOTOS USING GRID */
+  .mid-cont {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    max-width: 100%;
+    align-items: center;
+    margin: 0 2em 0 2em;
+    grid-column-gap: 1.5em;
+  }
+  .mid-image > img {
+    border-radius: 16px;
+  }
+
+  /* MOBILE FOOTER */
+
+  footer {
+    display: block;
+    text-align: center;
+  }
+
+  .hero-footer > img {
+    display: block;
+    background: linear-gradient(
+      rgba(77, 151, 169, 0.86),
+      rgba(77, 151, 169, 0.86)
+    );
+  }
+
+  .footer-txt-head {
+    font-size: 3em;
+  }
+}
+
+/* TABLET DESIGN */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}

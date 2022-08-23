@@ -1,0 +1,78 @@
+html {
+  font-size: 1em;
+  font-family: "Red Hat Display", arial, sans-serif;
+}
+body {
+  background-color: #dcdcdc;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+}
+
+/* title */
+.head {
+  text-align: center;
+}
+
+h1#title {
+  margin-top: 2em;
+
+  margin-bottom: 0;
+}
+.head > p {
+  margin-top: 0;
+}
+/* end title */
+
+/* photo */
+
+img {
+  display: block;
+  box-shadow: rgb(169 166 166) 1px 2px 19px;
+}
+
+#image {
+  display: block;
+  height: auto;
+  margin: 4em auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#img-div {
+  background-color: #fafafa;
+  width: 100%;
+  text-align: center;
+  padding: 4em 2em 0 0;
+  margin: 0;
+}
+
+#img-caption {
+  text-align: center;
+  margin: 2em 0;
+}
+
+#tribute-info {
+  max-width: 40vw;
+  text-align: left;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+span {
+  font-weight: 800;
+}
+
+#tribute-info > h3 {
+  text-align: center;
+  margin: 2em 0em;
+}
+
+a {
+  color: rgb(2, 100, 206);
+  font-weight: 700;
+  padding: 3em 0;
+}
+a:hover {
+  color: rgb(3, 61, 122);
+}
