@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+    background-color: #fafafa;
+    color: #28283D;
+}
+
+a {
+    border-radius: 2em;
+    color: #fafafa;
+    padding: 0.7em 1em 0.7em 1em;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+    transition: 0.32s;
+}
+
+.download {
+    display: block;
+    background-color: #4D96A9;
+    border-radius: 2em;
+    margin: 0 auto 0.5em;
+    width: 12em;
+   
+}
+
+.text-dwnld-ver {
+    color: #8FE3F9;
+}
+
+.download:hover {
+    background-color: #71C0D4;
+    /* transform: scale(1.1); */
+    cursor: pointer;
+    /* transition: 0.2s; */
+}
+
+.what-is {
+    display: block;
+    background-color: #855FB1;
+    border-radius: 2em;
+    margin: 0 auto;
+    width: 10em;
+}
+
+.footer-dwnld-ver {
+    color: #D9B8FF;
+}
+
+.what-is:hover {
+    background-color: #B18BDD;
+    /* transform: scale(1.1); */
+
+
+}
+
+p {
+    color: #28283D;
+}
+
+.dropping-number {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    position: relative;
+    z-index: 1;
+}
+
+.vert-line {
+    border-left: 1px solid #87879D;
+    height: 84px;
+    width: 1px;
+    margin: 0 auto;
+}
+
+.circle {
+    text-align: center;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    border: 0.7px solid #87879D;
+    margin: 0 auto;
+    border-radius: 25px;
+    font-weight: 700;
+    background: #fafafa;
+}
+
+.circle>p {
+    color: #87879D;
+}
+
+img {
+    max-width: 100%;
+}
+
+main,
+.download-text {
+    margin: 1em
+}
+
+.download-text {
+    text-align: center;
+}
+
+.midarticle-wrapper {
+    text-align: center;
+    width: 20em;
+    margin: 0 auto;
+}
+
+.midarticle-title {
+    text-transform: uppercase;
+    color: #4D96A9;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.midarticle {
+    width: 10em;
+    margin-top: 0.5em;
+    font-size: 1.8em;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.dropping-number.bottom {
+    margin-bottom: -1.7em;
+}
+
+/* ############################# MOBILE DESIGN ############################### */
+@media only screen and (max-width: 480px) {
+  
+    .left-image,
+    .right-image,
+    .desktop-footer-img {
+        display: none;
+    }
+
+    .header-logo {
+        display: flex;
+        /* align-items: center; */
+        margin: 2.5em auto 2.5em auto;
+    }
+
+    .hero-mobile {
+        max-width: 100%;
+       
+    }
+
+    .download-text>h1 {
+        font-size: 2.5em;
+        line-height: 1;
+    }
+
+    /* ##### MIDDLE PHOTOS ######### */
+    
+    .mid-cont {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 1em;
+    }
+
+    .mid-image {
+        border-radius: .7em;
+    }
+
+    /* ####### END MIDDLE PHOTOS ########## */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(rgba(77, 151, 169, 0.9), rgba(77, 151, 169, 0.9)), url(./assets/mobile/image-footer.jpg);
+        background-size: cover;
+        /* height: 27em; */
+        padding: 5em;
+        width: auto;
+    }
+
+    footer>h3 {
+        font-size: 2em;
+        color: #fafafa;
+        width: 10em;
+        line-height: 1;
+        margin-bottom: .4em;
+        /* flex-shrink: -0.5; */
+    }
+
+    footer>p {
+        margin-top: 1em;
+        font-size: 1em;
+        color: #fafafa;
+        width: 17.5em;
+        flex-grow: 0.1;
+
+    }
+}
+
+/* ###################### END-MOBILE DESIGN #############################*/
+
+
+
+/* TABLET DESIGN */
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+    .left-image,
+    .right-image,
+    .desktop-footer-img {
+        display: none;
+    }
+    
+    .header-logo {
+        display: flex;
+        margin: 2.6em auto 2.6em auto;
+    }
+
+    .hero-mobile {
+        max-width: 100%;
+    }
+
+    .download-text>h1 {
+        font-size: 2.5em;
+        line-height: 1;
+    }
+    .download, .what-is{
+        display: inline; 
+    }
+    .download{
+        margin-right: 0.3em; 
+
+    }
+    
+    .dwnld-info{
+        width: 28.56em;
+        margin: 0 auto 3em auto;
+    }
+    /* .btns{
+        display: flex;
+        align-items: flex-start;
+        gap: 1em;
+    } */
+
+     /* ########### MIDDLE PHOTOS ############### */
+    
+     .mid-cont {
+        display: grid;
+        grid-template-columns: 24% 24% 24% 24%; 
+        gap: 0.5em;
+        /* margin: 0 auto; */
+    }
+
+    .mid-image {
+        border-radius: .7em;
+    }
+    /* END MIDDLE PHOTOS */
+
+    .midarticle {
+        width: 95%;
+        margin: 0.5em auto auto auto;
+        font-size: 1.8em;
+        font-weight: 900;
+        line-height: 1;
+     
+    }
+
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
+        background: linear-gradient(rgba(77, 151, 169, 0.9), rgba(77, 151, 169, 0.9)), url(./assets/mobile/image-footer.jpg);
+        background-size: cover;
+        /* height: 27em; */
+        padding: 5em;
+    }
+
+    footer>h3 {
+        font-size: 2em;
+        color: #fafafa;
+        width: 10em;
+        line-height: 1;
+        margin-bottom: .4em;
+        /* flex-shrink: -0.5; */
+    }
+
+    footer>p {
+        margin-top: 1rem;
+        font-size: 1rem;
+        color: #fafafa;
+    
+    }
+}
+/*END TABLE DESIGN */
+
+/* LAPTOP/DESKTOP DESIGN */
+@media only screen and (min-width: 769px) {
+    .hero-mobile {
+        display: none;
+    }
+    .header-logo {
+        display: flex;
+        margin: 2.6em auto 2.6em auto;
+    }
+    
+}
+/* END LAPTOP/DESKTOP DESIGN */

@@ -1,124 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="./styles.css" />
 
-    <title>Frontend Mentor | Meet landing page</title>
-  </head>
-  <body>
-    <!-- ######## header ########### -->
-    <header>
-      <div class="header-wrapper">
-        <div class="header-logo">
-          <img src="./assets/logo.svg" alt="meet logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="stylesheet" href="./responsive-style.css" />
+  <!-- <link rel="stylesheet" href="./styles.css" /> -->
+
+  <title>Frontend Mentor | Meet landing page</title>
+</head>
+
+<body>
+  <!-- ######## header ########### -->
+  <header>
+    <div class="header-wrapper">
+      <div class="logo-box">
+        <img class="header-logo" src="./assets/logo.svg" alt="meet logo" />
+      </div>
+
+      <div class="header-content">
+        <div class="hero-box">
+          <img class="hero-mobile" src="./assets/tablet/image-hero.png" alt="faces of people" />
         </div>
 
-        <div class="header-content">
-          <div class="hero-mobile">
-            <img src="./assets/tablet/image-hero.png" alt="faces of people" />
-          </div>
-
-          <div class="left-image">
-            <img
-              src="./assets/desktop/image-hero-left.png"
-              alt="faces of people"
-            />
-          </div>
-          <div class="download-text">
-            <h1>Group chat for everyone</h1>
-            <p>
-              Meet makes it easy to connect with others face-to-face virtually
-              and collaborate across any device.
-            </p>
-            <a href="#" class="download">Download <span>v1.3</span></a>
+        <div class="left-image">
+          <img src="./assets/desktop/image-hero-left.png" alt="faces of people" />
+        </div>
+        <div class="download-text">
+          <h1>Group Chat <br> for Everyone</h1>
+          <p class="dwnld-info">
+            Meet makes it easy to connect with others face-to-face virtually
+            and collaborate across any device.
+          </p>
+          <div class="btns">
+            <a href="#" class="download">Download <span class="text-dwnld-ver">v1.3</span></a>
             <a href="#" class="what-is">What is it?</a>
           </div>
-          <div class="right-image">
-            <img
-              src="./assets/desktop/image-hero-right.png"
-              alt="faces of people"
-            />
+        </div>
+        <div class="dropping-number">
+          <div class="vert-line">
+          </div>
+          <div class="circle">
+            <p>01</p>
           </div>
         </div>
-      </div>
-    </header>
-    <!-- ######## end header ########### -->
-
-    <!-- *********** main content ***********-->
-    <main>
-      <div class="middle-photos">
-        <div class="mid-cont">
-          <div class="mid-image">
-            <img
-              src="./assets/desktop/image-woman-in-videocall.jpg"
-              alt="woman in video call"
-            />
-          </div>
-          <div class="mid-image">
-            <img
-              src="./assets/desktop/image-women-videochatting.jpg"
-              alt="women videochatting"
-            />
-          </div>
-          <div class="mid-image">
-            <img
-              src="./assets/desktop/image-man-texting.jpg"
-              alt="man texting"
-            />
-          </div>
-          <div class="mid-image">
-            <img
-              src="./assets/desktop/image-men-in-meeting.jpg"
-              alt="men in meeting"
-            />
-          </div>
+        <div class="right-image">
+          <img src="./assets/desktop/image-hero-right.png" alt="faces of people" />
         </div>
       </div>
-      <!-- middle article -->
-      <article class="midarticle-wrapper">
-        <h3 class="midarticle-title">built for modern use</h3>
-        <p class="midarticle">Smarter meetings, all in one place</p>
-        <p class="midarticle-more">
-          Send messages, share files, show your screen, and record your meetings
-          —all in one workspace. Control who can join with <br />
-          invite-only team access, data encryption, and data export.
-        </p>
-      </article>
-      <!-- end of middle article -->
-    </main>
-    <!-- *********** end main content ********** -->
+    </div>
+  </header>
+  <!-- ######## end header ########### -->
 
-    <!-- $$$$$$$ footer $$$$$$$$$$-->
-    <footer>
-      <div class="hero-footer">
-        <img
+  <!-- *********** main content ***********-->
+  <main>
+    <div class="middle-photos">
+      <div class="mid-cont">
+        <div>
+          <img class="mid-image" src="./assets/desktop/image-woman-in-videocall.jpg" alt="woman in video call" />
+        </div>
+        <div>
+          <img class="mid-image" src="./assets/desktop/image-women-videochatting.jpg" alt="women videochatting" />
+        </div>
+        <div>
+          <img class="mid-image" src="./assets/desktop/image-man-texting.jpg" alt="man texting" />
+        </div>
+        <div>
+          <img class="mid-image" src="./assets/desktop/image-men-in-meeting.jpg" alt="men in meeting" />
+        </div>
+      </div>
+    </div>
+
+    <!-- middle article -->
+    <article class="midarticle-wrapper">
+      <h3 class="midarticle-title">built for modern use</h3>
+      <p class="midarticle">Smarter meetings, all in one place</p>
+      <p class="midarticle-more">
+        Send messages, share files, show your screen, and record your meetings
+        —all in one workspace. Control who can join with <!--<br />-->
+        invite-only team access, data encryption, and data export.
+      </p>
+    </article>
+    <!-- end of middle article -->
+  </main>
+  <!-- *********** end main content ********** -->
+
+  <!-- $$$$$$$ footer $$$$$$$$$$-->
+  <div class="dropping-number bottom">
+    <div class="vert-line">
+    </div>
+    <div class="circle">
+      <p>02</p>
+    </div>
+  </div>
+  <footer>
+    <h3 class="footer-txt-head footer-txt">Experience more together</h3>
+    <p class="footer-txt">
+      Stay connected with reliable HD meetings and unlimited one-on-one and
+      group video sessions.
+    </p>
+    <a href="#" class="what-is footer-txt">Download <span class="footer-dwnld-ver">v1.3</span></a>
+
+
+
+    <!--       
+        <img class="hero-footer"
           src="./assets/mobile/image-footer.jpg"
           alt="Lady listening to music"
-        />
-      </div>
-      <h3 class="footer-txt-head footer-txt">Experience more together</h3>
-      <p class="footer-txt">
-        Stay connected with reliable HD meetings and unlimited one-on-one and
-        group video sessions.
-      </p>
-      <a href="#" class="what-is footer-txt">Download</a>
+        /> -->
 
-      <!-- <img src="./assets/desktop/image-footer.jpg" alt="footer image" /> -->
-    </footer>
-    <!-- $$$$$$$$$ end footer $$$$$$$$ -->
-  </body>
+    <div class="desk-foot">
+      <img class="desktop-footer-img" src="./assets/desktop/image-footer.jpg" alt="footer image" />
+    </div>
+  </footer>
+  <!-- $$$$$$$$$ end footer $$$$$$$$ -->
+</body>
+
 </html>
