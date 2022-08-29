@@ -7,6 +7,7 @@ body {
     font-family: "Red Hat Display", sans-serif;
     background-color: #fafafa;
     color: #28283D;
+
 }
 
 a {
@@ -24,8 +25,7 @@ a {
     background-color: #4D96A9;
     border-radius: 2em;
     margin: 0 auto 0.5em;
-    width: 12em;
-   
+    width: 12.06em;
 }
 
 .text-dwnld-ver {
@@ -54,8 +54,6 @@ a {
 .what-is:hover {
     background-color: #B18BDD;
     /* transform: scale(1.1); */
-
-
 }
 
 p {
@@ -132,7 +130,7 @@ main,
 
 /* ############################# MOBILE DESIGN ############################### */
 @media only screen and (max-width: 480px) {
-  
+
     .left-image,
     .right-image,
     .desktop-footer-img {
@@ -147,7 +145,7 @@ main,
 
     .hero-mobile {
         max-width: 100%;
-       
+
     }
 
     .download-text>h1 {
@@ -156,7 +154,7 @@ main,
     }
 
     /* ##### MIDDLE PHOTOS ######### */
-    
+
     .mid-cont {
         display: grid;
         grid-template-columns: 48% 48%;
@@ -213,7 +211,7 @@ main,
     .desktop-footer-img {
         display: none;
     }
-    
+
     .header-logo {
         display: flex;
         margin: 2.6em auto 2.6em auto;
@@ -227,29 +225,33 @@ main,
         font-size: 2.5em;
         line-height: 1;
     }
-    .download, .what-is{
-        display: inline; 
+
+    .download,
+    .what-is {
+        display: inline;
     }
-    .download{
-        margin-right: 0.3em; 
+
+    .download {
+        margin-right: 0.3em;
 
     }
-    
-    .dwnld-info{
+
+    .dwnld-info {
         width: 28.56em;
         margin: 0 auto 3em auto;
     }
+
     /* .btns{
         display: flex;
         align-items: flex-start;
         gap: 1em;
     } */
 
-     /* ########### MIDDLE PHOTOS ############### */
-    
-     .mid-cont {
+    /* ########### MIDDLE PHOTOS ############### */
+
+    .mid-cont {
         display: grid;
-        grid-template-columns: 24% 24% 24% 24%; 
+        grid-template-columns: 24% 24% 24% 24%;
         gap: 0.5em;
         /* margin: 0 auto; */
     }
@@ -257,6 +259,7 @@ main,
     .mid-image {
         border-radius: .7em;
     }
+
     /* END MIDDLE PHOTOS */
 
     .midarticle {
@@ -265,16 +268,16 @@ main,
         font-size: 1.8em;
         font-weight: 900;
         line-height: 1;
-     
+
     }
 
-    
+
     footer {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center; 
+        text-align: center;
         background: linear-gradient(rgba(77, 151, 169, 0.9), rgba(77, 151, 169, 0.9)), url(./assets/mobile/image-footer.jpg);
         background-size: cover;
         /* height: 27em; */
@@ -294,41 +297,63 @@ main,
         margin-top: 1rem;
         font-size: 1rem;
         color: #fafafa;
-    
+
     }
 }
+
 /*END TABLE DESIGN */
 
 /* MEDIUM SCREENS*/
-@media only screen and (min-width:769px)/* and (max-width:1024px)*/ {
-        
+@media only screen and (min-width:769px)
+
+/* and (max-width:1024px)*/
+    {
+
     .header-logo {
         display: flex;
         margin: 2.6em auto 2.6em auto;
     }
 
-    .hero-mobile{
+    .hero-mobile {
         display: none;
-    } 
-    .header-content{
-        display: flex;
     }
 
-    /* .download-text>h1 {
-        font-size: 2.5em;
+    .header-content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .download-text>h1 {
+        font-size: 4rem;
         line-height: 1;
     }
-    .download, .what-is{
-        display: inline; 
+
+    .download,
+    .what-is {
+        display: inline;
     }
-    .download{
-        margin-right: 0.3em; 
+
+    .download-text {
+        flex-basis: 50%;
+        flex-shrink: 2;
     }
-    
-    .dwnld-info{
-        width: 28.56em;
-        margin: 0 auto 3em auto;
+
+    .download {
+        margin-right: 0.5rem;
+        font-size: 1rem;
     }
-     */
-} 
+
+    .what-is {
+        margin-left: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .dwnld-info {
+        width: 61%;
+        margin: 2em auto;
+        font-size: 1.125rem;
+    }
+
+}
+
 /* END LAPTOP/DESKTOP DESIGN */
