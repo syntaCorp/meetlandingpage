@@ -299,15 +299,36 @@ main,
 }
 /*END TABLE DESIGN */
 
-/* LAPTOP/DESKTOP DESIGN */
-@media only screen and (min-width: 769px) {
-    .hero-mobile {
-        display: none;
-    }
+/* MEDIUM SCREENS*/
+@media only screen and (min-width:769px)/* and (max-width:1024px)*/ {
+        
     .header-logo {
         display: flex;
         margin: 2.6em auto 2.6em auto;
     }
+
+    .hero-mobile{
+        display: none;
+    } 
+    .header-content{
+        display: flex;
+    }
+
+    /* .download-text>h1 {
+        font-size: 2.5em;
+        line-height: 1;
+    }
+    .download, .what-is{
+        display: inline; 
+    }
+    .download{
+        margin-right: 0.3em; 
+    }
     
-}
+    .dwnld-info{
+        width: 28.56em;
+        margin: 0 auto 3em auto;
+    }
+     */
+} 
 /* END LAPTOP/DESKTOP DESIGN */
