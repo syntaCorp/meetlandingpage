@@ -38,9 +38,7 @@ a {
 
 .download:hover {
     background-color: #71C0D4;
-    /* transform: scale(1.1); */
     cursor: pointer;
-    /* transition: 0.2s; */
 }
 
 .what-is {
@@ -50,13 +48,20 @@ a {
     margin: 0 auto;
     width: 8.6875em;
     font-size: 1rem;
+    text-align: center;
 }
-.footer-dwnd{
+
+.footer-dwnd {
     width: 12.0625em;
 
 }
+
 .footer-dwnld-ver {
     color: #D9B8FF;
+}
+
+.footer-txt {
+    color: #fafafa;
 }
 
 .what-is:hover {
@@ -70,6 +75,7 @@ p {
 
 .dropping-number {
     margin-top: 4em;
+    /*6.875*/
     margin-bottom: 4em;
     position: relative;
     z-index: 1;
@@ -115,7 +121,7 @@ main,
     text-align: center;
     /* width: 20em;
      */
-     width: 75%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -159,13 +165,14 @@ END GENERAL RULES -  APPLIES ON ALL SCREEN SIZES
 
     .hero-mobile {
         max-width: 100%;
-
     }
+
     .download {
         display: block;
         margin: 0 auto 1em;
         /* width: 12.06em; */
     }
+
     .download-text>h1 {
         font-size: 2.5rem;
         line-height: 1;
@@ -183,29 +190,32 @@ END GENERAL RULES -  APPLIES ON ALL SCREEN SIZES
     .mid-image {
         border-radius: .7em;
     }
-    .midarticle{
+
+    .midarticle {
         font-size: 2rem;
-    } 
-    .midarticle-more{
+    }
+
+    .midarticle-more {
         font-size: 1rem;
     }
+
     /* ####### END MIDDLE PHOTOS ########## */
 
-    footer {
+    .foot-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        background: linear-gradient(rgba(77, 151, 169, 0.9), rgba(77, 151, 169, 0.9)), 
-        url(./assets/mobile/image-footer.jpg);
+        background: linear-gradient(rgba(77, 151, 169, 0.9), rgba(77, 151, 169, 0.9)),
+            url(./assets/mobile/image-footer.jpg);
         background-size: cover;
         /* height: 27em; */
         padding: 5em;
         width: auto;
     }
 
-    footer>h3 {
+    .foot-itms>h3 {
         font-size: 2em;
         color: #fafafa;
         width: 10em;
@@ -214,7 +224,7 @@ END GENERAL RULES -  APPLIES ON ALL SCREEN SIZES
         /* flex-shrink: -0.5; */
     }
 
-    footer>p {
+    .foot-itms>p {
         margin-top: 1em;
         font-size: 1.125em;
         color: #fafafa;
@@ -259,7 +269,7 @@ END GENERAL RULES -  APPLIES ON ALL SCREEN SIZES
     .download {
         margin-right: 0.3em;
     }
-  
+
     .dwnld-info {
         width: 28.56em;
         padding: 0 2em;
@@ -267,63 +277,62 @@ END GENERAL RULES -  APPLIES ON ALL SCREEN SIZES
         font-size: 1rem;
     }
 
-    /* .btns{
-        display: flex;
-        align-items: flex-start;
-        gap: 1em;
-    } */
+    .dropping-number {
+        margin-top: 5em;
+        /* margin-bottom: 4em; */
+    }
 
     /* ########### MIDDLE PHOTOS ############### */
 
     .mid-cont {
         display: grid;
-        grid-template-columns: 24% 24% 24% 24%;
+        grid-template-columns: repeat(4, 24%);
         gap: 0.5em;
         /* margin: 0 auto; */
     }
 
     .mid-image {
         border-radius: .7em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     /* END MIDDLE PHOTOS */
 
     .midarticle {
-        width: 80%;/*  width: 26.813rem;*/
+        width: 80%;
+        /*  width: 26.813rem;*/
         margin: 0.5em auto auto auto;
         font-size: 2.5rem;
         font-weight: 900;
         line-height: 1;
     }
 
-
-    footer {
+    .foot-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        background: linear-gradient(rgba(77, 151, 169, 0.9), rgba(77, 151, 169, 0.9)), 
-        url(./assets/mobile/image-footer.jpg);
+        background: linear-gradient(rgba(77, 151, 169, 0.9), rgba(77, 151, 169, 0.9)),
+            url(./assets/tablet/image-footer.jpg);
         background-size: cover;
         /* height: 27em; */
         padding: 5em;
     }
 
-    footer>h3 {
+    .foot-itms > h3 {
         font-size: 2.5rem;
         color: #fafafa;
         width: 10em;
         line-height: 1;
-        margin-bottom: .4em;
+        margin: 0 auto .4em;
         /* flex-shrink: -0.5; */
     }
-
-    footer>p {
-        margin-top: 1em;
-        font-size: 1rem;
-        color: #fafafa;
-        width: 31.8rem;/* width:35.8em; */
+  
+    .footer-txt {
+        padding: 1em 3em;
     }
 }
 
@@ -366,11 +375,11 @@ END GENERAL RULES -  APPLIES ON ALL SCREEN SIZES
 
     .download {
         margin-right: 0.5rem;
-      
+
     }
 
     .what-is {
-        margin-left: 0.5rem;
+        margin: 0;
         font-size: 1rem;
     }
 
@@ -378,6 +387,84 @@ END GENERAL RULES -  APPLIES ON ALL SCREEN SIZES
         width: 61%;
         margin: 2em auto;
         font-size: 1.125rem;
+    }
+
+    .dropping-number {
+        margin-top: 6.875em;
+        margin-bottom: 4em;
+    }
+
+    /* ##### MIDDLE PHOTOS ######### */
+
+    .mid-cont {
+        /* display: grid;
+        grid-template-columns: repeat(4,24%);
+        gap: 1em; */
+        display: flex;
+        gap: 1em;
+        width: 65%;
+        max-width: 1110px;
+        /*at large screens don't exceed this width*/
+        margin: 0 auto;
+    }
+
+    .mid-image {
+        border-radius: .7em;
+    }
+
+    .midarticle {
+        font-size: 2.5rem;
+        width: 11em;
+        margin: 0.5em auto;
+    }
+
+    .midarticle-more {
+        font-size: 1.125rem;
+        width: 31.25rem;
+        margin: inherit;
+    }
+
+    /* ####### END MIDDLE PHOTOS ########## */
+
+
+    .foot-content {
+        /* display: flex;
+    align-items: center;  */
+        background: linear-gradient(rgba(77, 151, 169, 0.86),
+                rgba(77, 151, 169, 0.86)),
+            url(./assets/desktop/image-footer.jpg);
+        background-size: cover;
+        padding: 5em;
+    }
+
+    .foot-itms {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	gap: 4em;
+}
+
+    .footer-txt-head {
+        color: #fafafa;
+        font-size: 2.5rem;
+        flex-basis: 10em;
+    }
+
+    .footer-txt {
+        font-size: 1.125rem;
+        flex-basis: 18.875em;
+    }
+
+    footer>p {
+        width: 300px;
+        flex-basis: 19em;
+    }
+
+    footer>a {
+        flex-basis: 6rem;
+        text-align: center;
     }
 
 }
